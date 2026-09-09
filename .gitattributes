@@ -1,0 +1,14 @@
+# Normalise les fins de ligne : indispensable quand un binôme mélange Mac et Windows.
+# Sans ce fichier, Git peut signaler un fichier entier comme modifié alors que
+# seules les fins de ligne diffèrent — et vos diffs deviennent illisibles.
+* text=auto
+
+# Fichiers binaires : ne jamais toucher
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg text
+*.mp3 binary
+*.mp4 binary
+*.webm binary

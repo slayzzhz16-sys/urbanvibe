@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Festi'JS — feuille de style principale
+   Écrite en MOBILE FIRST : le style de base vise le petit écran,
+   les media queries `min-width` viennent ensuite ÉLARGIR la mise en page.
+   ========================================================================== */
+
+/* --- 1. Variables de thème (à personnaliser séance 10 avec Sass) --------- */
+:root {
+  --couleur-fond: #ffffff;
+  --couleur-texte: #1f2430;
+  --couleur-accent: #1f3a5f;
+  --espace: 1rem;
+}
+
+/* --- 2. Reset minimal --------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+body, h1, h2, h3, p, ul { margin: 0; padding: 0; }
+ul { list-style: none; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* --- 3. Base ------------------------------------------------------------ */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  color: var(--couleur-texte);
+  background: var(--couleur-fond);
+}
+
+/* --- 4. Composants ------------------------------------------------------ */
+/* TODO séance 2 : en-tête, hero, cartes */
+
+
+/* --- 5. Points de rupture ----------------------------------------------- */
+/* @media (min-width: 48em) { ... }   tablette */
+/* @media (min-width: 75em) { ... }   grand écran */

@@ -1,0 +1,19 @@
+# Système
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# Node (à partir de la séance 10, Sass)
+node_modules/
+package-lock.json
+
+# Sass
+.sass-cache/
+*.css.map
+
+# Médias lourds — gardez les extraits COURTS (5 à 8 s)
+# assets/video/*.mp4

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO : remplacez par le nom de votre festival -->
+  <title>Festi'JS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-entete">
+    <!-- TODO : logo + nom du festival -->
+    <p class="logo">Festi'JS</p>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="programmation.html">Programmation</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Votre festival</h1>
+
+    <!-- TODO séance 2 : hero + section « à la une » -->
+    <!-- TODO séance 7 : les cartes seront générées ici par JavaScript -->
+    <section id="programmation" aria-labelledby="titre-prog">
+      <h2 id="titre-prog">À l'affiche</h2>
+      <div id="liste-evenements"><!-- généré en JS --></div>
+    </section>
+  </main>
+
+  <footer class="site-pied">
+    <p>Projet BUT 2 — <!-- TODO : vos noms --></p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
