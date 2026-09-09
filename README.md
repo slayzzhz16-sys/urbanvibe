@@ -6,22 +6,25 @@
 
 | Prénom NOM | Identifiant Git | Groupe |
 |------------|-----------------|--------|
-|            |                 |        |
+|     BELMEKKI IMAD             CRÉA 2
+Slayzzhz16-sys
+OKANZA DIVINE 
+okzdivine|                 |        |
 |            |                 |        |
 
 ### Répartition du travail
 
 _Qui tient quels fichiers ? À revoir toutes les 3-4 séances, en échangeant les rôles._
 
-- **[Nom 1] →**
-- **[Nom 2] →**
+- **[Nom 1] →** Imad
+- **[Nom 2] →** Divine
 
 ## Le festival
 
-- **Thème :**
-- **En une phrase :**
+- **Thème :** Musique 
+- **En une phrase :** un festival urbain 
 - **Blind test envisagé :** audio / vidéo — sur quoi ?
-
+sur de la musique 
 ## Lancer le projet
 
 Ouvrir `index.html` avec un serveur local (extension Live Server de VS Code)
