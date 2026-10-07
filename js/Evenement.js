@@ -1,5 +1,12 @@
 class Evenement {
-  constructor() {
+  constructor(nom, artiste, scene, date, heureDebut, duree, genre) {
+    this.nom = nom;
+    this.artiste = artiste;
+    this.scene = scene;
+    this.date = date;
+    this.heureDebut = heureDebut; 
+    this.duree = duree;          
+    this.genre = genre;
   }
 
   heureFin() {
@@ -18,7 +25,10 @@ class Evenement {
   carte() {
     return `
       <li class="carte">
-        <h3>${}</h3>
+        <h3>${this.nom}</h3>
+        <p>${this.artiste} - ${this.genre}</p>
+        <p>${this.scene}</p>
+        <p>${this.heureDebut} - ${this.heureFin()}</p>
       </li>`;
   }
 }
