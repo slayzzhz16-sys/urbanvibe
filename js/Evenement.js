@@ -10,9 +10,9 @@ class Evenement {
   }
 
   heureFin() {
-    const heures = Number(this..slice(0, 2));
-    const minutes = Number(this..slice(3, 5));
-    const total = heures * 60 + minutes + this.;
+    const heures = Number(this.heureDebut.slice(0, 2));
+    const minutes = Number(this.heureDebut.slice(3, 5));
+    const total = heures * 60 + minutes + this.duree;
 
     let h = Math.floor(total / 60) % 24;
     let m = total % 60;
