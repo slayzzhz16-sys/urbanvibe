@@ -1,12 +1,26 @@
 class Evenement {
-  constructor(nom, artiste, scene, date, heureDebut, duree, genre) {
+  constructor(nom, date, lieu) {
     this.nom = nom;
-    this.artiste = artiste;
-    this.scene = scene;
     this.date = date;
-    this.heureDebut = heureDebut; 
-    this.duree = duree;          
-    this.genre = genre;
+    this.lieu = lieu;
+  }
+
+  carte() {
+    return `
+      <li class="carte">
+        <h3>${this.nom}</h3>
+        <p>${this.lieu}</p>
+        <p>${this.date}</p>
+      </li>`;
+  }
+}
+
+class Concert extends Evenement {
+  constructor(nom, date, lieu, heureDebut, duree, style) {
+    super(nom, date, lieu);
+    this.heureDebut = heureDebut; // "HH:MM", ex : "21:00"
+    this.duree = duree;           // en minutes, ex : 60
+    this.style = style;
   }
 
   heureFin() {
@@ -26,9 +40,32 @@ class Evenement {
     return `
       <li class="carte">
         <h3>${this.nom}</h3>
-        <p>${this.artiste} - ${this.genre}</p>
-        <p>${this.scene}</p>
+        <p>${this.style}</p>
+        <p>${this.lieu}</p>
+        <p>${this.date}</p>
         <p>${this.heureDebut} - ${this.heureFin()}</p>
       </li>`;
   }
 }
+
+class Activite extends Evenement {
+  constructor(nom, date, lieu, horaires, description) {
+    super(nom, date, lieu);
+    this.horaires = horaires;       // "14h-18h"
+    this.description = description;
+  }
+
+  carte() {
+    return `
+      <li class="carte">
+        <h3>${this.nom}</h3>
+        <p>${this.lieu}</p>
+        <p>${this.date}</p>
+        <p>${this.horaires}</p>
+        <p>${this.description}</p>
+      </li>`;
+  }
+  
+}
+const programme = document.querySelector("#programme");
+
