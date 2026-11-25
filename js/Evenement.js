@@ -7,9 +7,9 @@ class Evenement {
 
   carte() {
     return `
-      <li class="carte">
+      <li class="carte" data-lieu="${this.lieu}">
         <h3>${this.nom}</h3>
-        <p>${this.lieu}</p>
+        <p class="lieu">${this.lieu}</p>
         <p>${this.date}</p>
       </li>`;
   }
@@ -38,10 +38,10 @@ class Concert extends Evenement {
 
   carte() {
     return `
-      <li class="carte">
+      <li class="carte" data-lieu="${this.lieu}">
         <h3>${this.nom}</h3>
         <p>${this.style}</p>
-        <p>${this.lieu}</p>
+        <p class="lieu">${this.lieu}</p>
         <p>${this.date}</p>
         <p>${this.heureDebut} - ${this.heureFin()}</p>
       </li>`;
@@ -57,9 +57,9 @@ class Activite extends Evenement {
 
   carte() {
     return `
-      <li class="carte">
+      <li class="carte" data-lieu="${this.lieu}">
         <h3>${this.nom}</h3>
-        <p>${this.lieu}</p>
+        <p class="lieu">${this.lieu}</p>
         <p>${this.date}</p>
         <p>${this.horaires}</p>
         <p>${this.description}</p>
@@ -67,5 +67,4 @@ class Activite extends Evenement {
   }
   
 }
-const programme = document.querySelector("#programme");
 

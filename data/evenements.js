@@ -17,6 +17,5 @@ const activites = [
   new Activite("Personnalisation de tote bags", "22 juillet 2027", "Chill & Create", "15h-19h", "Un deuxième atelier pour repartir avec un tote bag unique, personnalisé selon son style."),
 ];
 
-concerts.forEach(c => programme.innerHTML += c.carte());
-activites.forEach(a => programme.innerHTML += a.carte());
-;
+// Tout le programme du festival dans une seule liste
+const programme = concerts.concat(activites);
