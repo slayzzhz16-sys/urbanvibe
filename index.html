@@ -13,6 +13,35 @@
 
   <main>
     <h2>Programme</h2>
+
+    <div class="outils">
+      <div class="champ">
+       
+        <label for="recherche">Rechercher un événement</label>
+        <input type="search" id="recherche" placeholder="Ex : Beyoncé, tote bag…">
+      </div>
+
+      <div class="champ">
+        
+        <label for="tri">Trier</label>
+        <select id="tri">
+          <option value="">Ordre du programme</option>
+          <option value="nom">Par nom</option>
+          <option value="heure">Par heure</option>
+          <option value="duree">Par durée</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="filtres">
+      <button class="actif" aria-pressed="true" data-jour="tout">Tout voir</button>
+      <button aria-pressed="false" data-jour="21 juillet 2027">21 juillet</button>
+      <button aria-pressed="false" data-jour="22 juillet 2027">22 juillet</button>
+    </div>
+
+    
+    <p id="compteur" aria-live="polite"></p>
+
     <ul id="programme"></ul>
   </main>
 

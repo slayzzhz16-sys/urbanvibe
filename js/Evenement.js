@@ -53,6 +53,13 @@ class Activite extends Evenement {
     super(nom, date, lieu);
     this.horaires = horaires;       // "14h-18h"
     this.description = description;
+
+    // Pour pouvoir trier les activités comme les concerts,
+    // on calcule aussi une heure de début ("14:00") et une durée en minutes.
+    const debut = Number(horaires.split("-")[0].replace("h", "")); // 14
+    const fin = Number(horaires.split("-")[1].replace("h", ""));   // 18
+    this.heureDebut = (debut < 10 ? "0" + debut : debut) + ":00";
+    this.duree = (fin - debut) * 60;
   }
 
   carte() {
